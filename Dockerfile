@@ -16,7 +16,7 @@ RUN go mod download
 
 COPY . .
 RUN mkdir -p /brics/bin/
-RUN go build $FLAGS -o /brics/bin/ ./cmd/...
+RUN go build $FLAGS -o /brics/bin/ .
 
 # --- multistage docker build: stage #2: runtime image
 FROM alpine
