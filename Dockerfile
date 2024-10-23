@@ -37,4 +37,4 @@ RUN chmod +x bricsd
 #RUN unzip Linux.-.waglayalad-rusty.zip
 #RUN chmod +x 'Linux - waglayalad-rusty'/*
 RUN mv bricsd /usr/bin/
-CMD /usr/bin/bricsdd --utxoindex
+CMD /usr/bin/bricsd --utxoindex
